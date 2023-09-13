@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { getLocalStorage, setLocalStorage } from './app/lib/storageHelpers';
@@ -35,12 +34,12 @@ export default function CookieBanner() {
       } px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4 bg-gray-700 rounded-lg shadow`}
     >
       <div className="text-center">
-        <Link href="/info/cookies">
-          <p>
-            Utilizamos <span className="font-bold text-sky-400">cookies</span> para mejorar tu
-            experiencia en nuestro sitio web.
-          </p>
-        </Link>
+        {/* <Link href="/info/cookies"> */}
+        <p>
+          Utilizamos <span className="font-bold text-sky-400">cookies</span> para mejorar tu
+          experiencia en nuestro sitio web.
+        </p>
+        {/* </Link> */}
       </div>
 
       <div className="flex gap-2">

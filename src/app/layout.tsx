@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import GoogleAnalytics from '@/GoogleAnalytics';
-import CookieBanner from '@/CookieBanner';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <GoogleAnalytics GA_MEASUREMENT_ID="G-CQE7XHTXX7" />
       <body className={inter.className}>
         {children}
-        <CookieBanner />
+        {/* <CookieBanner /> */}
       </body>
     </html>
   );
