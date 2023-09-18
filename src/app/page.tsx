@@ -12,6 +12,7 @@ export default async function Home() {
       <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-4 sm:mb-8">
         Grupos de WhatsApp de Torino
       </h1>
+      <p>Grupos de whatsapp de Torino e Italia en general para latinos</p>
       <section className="mx-auto">
         {data.map((item: any) => (
           <div
